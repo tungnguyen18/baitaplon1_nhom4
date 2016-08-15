@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="com.example.admin.baitapnhom4.LoginActivity">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon_logo"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:id="@+id/editUser"
+        android:hint="Identifiant"
+        android:textColorHint="#FFFCFBFB"
+        android:textColor="#131313"
+        android:gravity="center"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editPass"
+        android:hint="Mot de passe"
+        android:textColorHint="#FFFCFBFB"
+        android:textColor="#131313"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:text="Connexion"
+        android:textColor="#FFFCFBFB"
+        android:gravity="center"
+        android:id="@+id/btnLogin"
+        android:background="@drawable/btn_login"
+        android:layout_below="@+id/editPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFCFBFB"
+        android:text="Mot de passe oublié?"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

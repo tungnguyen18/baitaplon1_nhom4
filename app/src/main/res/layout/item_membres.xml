@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/person"
+        android:paddingLeft="10dp"
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Antoine Riollet"
+        android:textColor="#010102"
+        android:textSize="20sp"
+        android:id="@+id/tvTitle"
+        android:paddingBottom="5dp"
+        android:layout_above="@+id/tvDescription"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Bienvenue sua moon profil"
+        android:id="@+id/tvDescription"
+        android:lines="2"
+        android:layout_alignBottom="@+id/view"
+        android:layout_alignStart="@+id/tvTitle"
+        android:layout_marginBottom="12dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/icon_phone"
+        android:layout_alignTop="@+id/tvTitle"
+        android:layout_toStartOf="@+id/imageView3" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/icon_mail"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="1dp"
+        android:text="New Text"
+        android:background="#b3b3b3"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/view"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
